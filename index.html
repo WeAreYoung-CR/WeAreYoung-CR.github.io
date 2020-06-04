@@ -1,0 +1,20 @@
+<script>
+  window.onload = function () {
+    var SearchButton = getElementById("SB");
+    var bSearchButton = getElementById("bilibiliseb");
+    SearchButton.onclick = function (){
+      var bsv = getElementById("Search").value;
+      var searchurl = "https://www.baidu.com/s?ie=UTF-8&wd=" + bsv;
+      window.open(searchurl);
+    } bSearchButton.onclick = function (){
+      var bilisv = getElementById("bilise").value;
+      var searchurl = "https://search.bilibili.com/all?keyword=" + bilisv;
+      window.open(searchurl)
+    }
+  }
+    
+</script>
+百度
+<input id="Search" placeholder="百度一下，你就知道" type="text"><input id="SB" value="百度一下" type="button"><br/>
+Bilibili哔哩哔哩搜索<br/>
+<input id="bilise" placeholder="2333~" type="text"><input id="bilibiliseb" value="2333一下" type="button"><br/>
